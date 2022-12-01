@@ -7,7 +7,7 @@ const userSchema = new Schema({
     apellido: String,
     fnacimiento: Date,
     genero: String,
-    email: { Type: String, require,unique:true },
+    email:{Type:String,require:true,unique:true},
     telefono:Number,
     paisorigen:String,
     password:String,

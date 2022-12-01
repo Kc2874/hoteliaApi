@@ -6,7 +6,7 @@ const url=`mongodb+srv://${process.env.USER}:${process.env.PASSWORD}@cluster0.pp
     const DB=await mongoose.connect(url);
     console.log("Conexión exitosa", DB.connection.name);
  } catch (error) {
-    console.log("error");
+    console.log(error);
  }
 }
 module.exports=conexionBD;
